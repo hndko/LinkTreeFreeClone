@@ -1,110 +1,50 @@
-# LinkTree Free Clone
+# Linktree Clone - Portofolio Minimalis Modern
 
-[![Playwright Tests](https://github.com/yoanbernabeu/LinkTreeFreeClone/actions/workflows/playwright.yml/badge.svg)](https://github.com/yoanbernabeu/LinkTreeFreeClone/actions/workflows/playwright.yml) [![Netlify Status](https://api.netlify.com/api/v1/badges/3e928715-44c6-4439-864e-6a346f699c07/deploy-status)](https://app.netlify.com/sites/linktreefreeclone/deploys)
+Projek ini adalah sebuah template portofolio minimalis yang terinspirasi dari Linktree, dibangun menggunakan **Astro** dan **Tailwind CSS**.
 
-![screenshoot](readme.png)
+Tujuannya adalah memberikan cara yang mudah dan elegan untuk menampilkan tautan penting, media sosial, dan kontak Anda dalam satu halaman yang responsif dan estetis.
 
-LinkTree Free Clone is a free clone of LinkTree, a popular link aggregator for social media. 
+## Konsep Portofolio
 
-It is built with [Astro](https://astro.build) and [Tailwind CSS](https://tailwindcss.com).
+Di era digital, "Kartu Nama" Anda adalah tautan bio Anda. Projek ini dirancang untuk:
 
-Feel free to use it as a template for your own projects.
+- **Personal Branding**: Tampilkan foto profil dan tagline yang merepresentasikan diri Anda.
+- **Sentralisasi**: Kumpulkan semua tautan karya, artikel, atau profil sosial media dalam satu tempat.
+- **Kecepatan**: Dibangun dengan Astro uintuk performa yang sangat cepat.
+- **Kustomisasi Mudah**: Desain yang bersih memudahkan untuk mengubah warna, font, dan konten sesuai kepribadian Anda.
 
-## 👀 Demo
+## Fitur
 
-You can see a demo of the project at [https://linktreefreeclone.yoandev.co/](https://linktreefreeclone.yoandev.co/)
+- ⚡ **Cepat**: Menggunakan Astro framework.
+- 🎨 **Modern & Minimalis**: Desain bersih dengan sentuhan glassmorphism/gradien (akan segera diupdate).
+- 📱 **Responsif**: Tampil sempurna di HP dan Desktop.
+- 🛠 **Mudah Dikustomisasi**: Cukup edit file markdown atau config.
 
-## 🚀 Quick start
+## Cara Menggunakan
 
-1. **Customize your general settings**
+1.  **Clone repository ini**
 
-   Open `src/config.ts` and edit the `SUBTITLE`, `TITLE`, `TAGLINE`, `contact`, `phone` and `email` variables.
-
-2. **Customize your links**
-
-    Create a new file in `src/pages/links/` for each link you want to add.
-    The file name will be not used, but it is recommended to use a descriptive name.
-    The file should contain a frontmatter section with the following variables:
-    
-    * `title`: The title of the link
-    
-    * `emoji`: The emoji to use for the link
-    
-    * `href`: The URL of the link
-
-    Example:
-    
-    ```md
-    ---
-
-    title: Link 1
-    emoji: 📺
-    href: https://lorem.com
-
-    ---
+    ```bash
+    git clone https://github.com/username/linktree-portfolio.git
+    cd linktree-portfolio
     ```
 
-3. **Customize your avatar**
+2.  **Install dependencies**
 
-    Replace the file `src/public/avatar.png` with your own avatar.
-
-4. **Customize your social media links**
-
-    Create a new file in `src/pages/social/` for each social media link you want to add.
-    The file name will be not used, but it is recommended to use a descriptive name.
-    The file should contain a frontmatter section with the following variables:
-
-    * `icon`: The icon to use for the link
-    
-    * `url`: The URL of the link
-
-    Example:
-
-    ```md
-    ---
-    icon: linkedin
-    url: https://linkedin.com/in/yoan-bernabeu
-
-    ---
+    ```bash
+    npm install
     ```
 
-## 🔠 List of available icons for social media
+3.  **Jalankan server development**
 
-For the `icon` variable in the frontmatter section of the social media links, you can use the following values:
+    ```bash
+    npm run dev
+    ```
 
-* `behance`
-* `discord`
-* `github`
-* `facebook`
-* `instagram`
-* `google`
-* `linkedin`
-* `pinterest`
-* `vkontakte`
-* `stackoverflow`
-* `telegram`
-* `youtube`
-* `tiktok`
-* `snapchat`
-* `slack`
-* `messenger`
-* `dribbble`
-* `reddit`
-* `twitter`
-* `whatsapp`
-* `twitch`
+4.  **Kustomisasi**
+    - Edit `src/config.ts` untuk mengubah Nama, Tagline, dan Kontak.
+    - Hapus atau tambah file di `src/pages/links/` untuk mengatur tautan Anda.
 
-## 🧞 Commands
+## Lisensi
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                | Action                                             |
-| :--------------------- | :------------------------------------------------- |
-| `npm install`          | Installs dependencies                              |
-| `npm run dev`          | Starts local dev server at `localhost:3000`        |
-| `npm run build`        | Build your production site to `./dist/`            |
-| `npm run preview`      | Preview your build locally, before deploying       |
-
-## 📝 License
-
-Licensed under the [MIT License](./LICENSE).# linktreev2
+MIT
